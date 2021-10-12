@@ -1,0 +1,39 @@
+.cv {
+  background-color: #{$white};
+  padding-bottom: 80px;
+  &__box {
+    background-color: #{$black};
+    border-radius: 5px;
+    margin: auto;
+    @include pc {
+      max-width: 1240px;
+      min-width: 750px;
+      width: 85%;
+      display: flex;
+      justify-content: center;
+      padding: 60px;
+    }
+    @include sp {
+      width: 90%;
+      display: block;
+      padding: 50px 15px;
+    }
+    &__item {
+      &:nth-child(1) {
+        @include sp {
+          margin-bottom: 30px;
+        }
+        img {
+          margin-bottom: 15px;
+        }
+      }
+      &:nth-child(2) {
+        img {
+          @include sp {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}

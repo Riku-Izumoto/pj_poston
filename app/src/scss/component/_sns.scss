@@ -1,0 +1,87 @@
+
+@function shadow($color) {
+  $val: 0px 0px $color;
+
+  @for $i from 1 through 30 {
+    $val: #{$val},
+    #{$i}px #{$i}px #{$color};
+  }
+
+  @return $val;
+}
+
+.social-nav {
+  padding: 0 0 3% 0;
+  list-style: none;
+  display: inline-block;
+  display: block;
+  margin: 0 5% 0 auto;
+  width: fit-content;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: inline-block;
+      float: left;
+      width: 48px;
+      height: 48px;
+      font-size: 20px;
+      color: #FFF;
+      text-decoration: none;
+      cursor: pointer;
+      text-align: center;
+      line-height: 48px;
+      background: #000;
+      position: relative;
+    }
+  }
+}
+
+.snsIcon {
+  li {
+    margin: 0 10px;
+
+    a {
+      color: #fff;
+      overflow: hidden;
+      border-radius: 50%;
+
+      &:hover {
+        background: #fff;
+      }
+    }
+
+    .twitter {
+      background: $twitter-color;
+
+      &:hover {
+        color: $twitter-color;
+      }
+    }
+
+    .instagram {
+      background: $instagram-color;
+
+      &:hover {
+        color: $instagram-color;
+      }
+    }
+
+    .note {
+      background: $note-color;
+
+      &:hover {
+        color: $note-color;
+      }
+    }
+
+    .line {
+      background: $line-color;
+
+      &:hover {
+        color: $line-color;
+      }
+    }
+  }
+}

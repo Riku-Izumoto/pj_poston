@@ -1,0 +1,96 @@
+.page {
+	padding-top: 10vh;
+	@include sp {
+		padding-top: 12vh;
+		margin-bottom: 50px;
+	}
+
+	&__here {
+		padding: 5% 0 7% 0;
+		margin: auto;
+		@include pc {
+			width: fit-content;
+		}
+		@include sp {
+			width: 80%;
+			margin: auto;
+			img {
+				margin: auto;
+			}
+		}
+
+		&__title {
+			@include pc {
+				@include font(
+					$fontSize: 50px,
+					$weight: 700,
+					$style: normal,
+					$kerning: 25,
+					$lineheight: 1.5
+				);
+			}
+
+			@include sp {
+				@include font(
+					$fontSize: 35px,
+					$weight: 700,
+					$style: normal,
+					$kerning: 25,
+					$lineheight: 1.5
+				);
+				margin-bottom: 20px;
+			}
+			.text-large {
+				font-size: 20px !important;
+			}
+		}
+	}
+}
+.bg-pink {
+	background-color: #fdf7f7;
+	padding-bottom: 60px;
+}
+
+.pageBox {
+	background-color: #{$white};
+	width: 90%;
+	margin: 0 auto;
+	padding: 80px 0;
+}
+.page-title-40 {
+	@include sp {
+		@include font(
+			$fontSize: 40px,
+			$weight: 700,
+			$style: normal,
+			$kerning: 25,
+			$lineheight: 1.25
+		);
+	}
+}
+
+.page-title-50 {
+	@include sp {
+		@include font(
+			$fontSize: 50px,
+			$weight: 700,
+			$style: normal,
+			$kerning: 25,
+			$lineheight: 1.25
+		);
+	}
+}
+
+.hierarchy {
+	width: 100%;
+	margin: auto;
+	padding: 15px 10%;
+	background-color: #{$white};
+}
+
+.w-90 {
+	@include sp {
+		width: 90%;
+		margin-right: auto;
+	}
+}

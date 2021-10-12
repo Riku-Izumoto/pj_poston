@@ -1,0 +1,219 @@
+- var url          = 'https://postnn.com/';
+- var local_url    = 'http://192.168.11.3:3000/';
+- var site_name    = 'POSTNn';
+- var og_locale    = 'jp_JP';
+- var og_type      = 'company';
+- var twitter_card = 'summary_large_image';
+- var twitter_site = '@';
+- var title        = 'プレゼントを贈る・受取るはPOSTNn';
+- var description  = 'POSTNnではLINE連携を行い誰でも無料で簡単にプレゼントの受取ができます。安心・安全を兼ね備えたサービスです。まずは友達追加から・・・';
+- var og_img       = 'https://postnn.com/img/ogp.png';
+- var favicon      = './favicon.ico';
+- var path         = '.'
+
+doctype html
+html(lang="ja")
+  head
+    include ./include/_head
+
+  body
+    #splash.js-loader.loader
+      #splash_logo
+        img(src=path+"/img/logo/logo.svg" alt="" class="fade")
+    main
+      include ./include/_header
+      .index
+        .index__top
+          img(src=path+"/img/page/firstView@2x.jpg.webp", alt="").index__top__firstImg
+          .index__top__warpper
+            .index__top__warpper__material
+              img(src=path+"/img/common/topMaterial.svg", alt="")
+            .index__top__warpper__material2
+              img(src=path+"/img/common/topMaterial2.svg", alt="")
+            .index__top__warpper__mock
+              img(src=path+"/img/common/mock.svg", alt="")
+            .index__top__warpper__content
+              p.text-bold.red ファンの気持ちを安全にお届けします
+              img(src=path+"/img/logo/logo.svg", alt="").w-300.pc-only
+              img(src=path+"/img/logo/logo.svg", alt="").w-175.sp-only
+              p.text-normal ファンからのプレゼントを安全かつ
+                br
+                | 必要なタイミングでお届けするため、
+                br
+                | ポストンは誕生しました。
+              a(href="https://lin.ee/uf1Xsgb" target="_blank" rel="noopener").btn.btn-hover01.text-bold プレゼントを受け取る
+        .index__creator.none
+          .index__creator__content
+            h2.text-title.pc-only.fadeUp
+              span
+                img(src=path+"/img/logo/logo.svg", alt="")
+              | を利用しているクリエイター
+            h2.text-title.sp-only.fadeUp
+              span
+                img(src=path+"/img/logo/logo.svg", alt="")
+              | を利用している
+            h2.text-title.sp-only.mb-30 クリエイター
+            .swiper-container.index__creator__content__container#ttt.fadeUp
+              .index__creator__content__list.swiper-wrapper
+                .index__creator__content__list__item.swiper-slide
+                  img(src=path+"/img/page/creator/kisaki.png.webp", alt="木崎ゆりあ")
+                  p.text-small 女優
+                  p.text-bold 木崎ゆりあ
+                .index__creator__content__list__item.swiper-slide
+                  img(src=path+"/img/page/creator/yorino.png.webp", alt="ANNNABABY & YURINO")
+                  p.text-small アーティスト
+                  p.text-bold ANNNABABY & YURINO
+                .index__creator__content__list__item.swiper-slide
+                  img(src=path+"/img/page/creator/ueya.png.webp", alt="上矢 えり奈")
+                  p.text-small タレント
+                  p.text-bold 上矢 えり奈
+                .index__creator__content__list__item.swiper-slide
+                  img(src=path+"/img/page/creator/yokaroumon.png.webp", alt="よかろうもん")
+                  p.text-small 音楽エンターテイメント
+                    br
+                    | グループ
+                  p.text-bold よかろうもん
+              .swiper-pagination
+        .index__merit.container
+          h2.section-title.fadeUp ファンの想いを、
+            br.sp-only
+            | 安心安全にお届けします
+          .index__merit__list
+            .index__merit__list__item.fadeUp
+              img(src=path+"/img/page/merit01.svg", alt="")
+              p.text-large 発送が早い
+              p.text-normal 当サービスでは、毎日配送作業を行います。好きなタイミングで発送を行う事が可能です。
+            .index__merit__list__item.fadeUp
+              img(src=path+"/img/page/merit02.svg", alt="")
+              p.text-large LINEアプリで完結
+              p.text-normal 専用のアプリを使用する必要はありません。ファンの方にもLINEアプリだけでお使いいただけます。
+            .index__merit__list__item.fadeUp
+              img(src=path+"/img/page/merit03.svg", alt="")
+              p.text-large 安全性
+              p.text-normal プレゼントは倉庫を経由する際に中身チェックを専用器具・手触りで確認します。また、受け取る前に写真で確認ができます。
+        .index__flow.container#flow
+          h2.section-title.red.fadeUp ご利用の流れ
+          .swiper-container.index__flow__container.fadeUp
+            .swiper-wrapper
+              .swiper-slide
+                .pc-only
+                  img(src=path+"/img/common/1.svg", alt="").imgNumber
+                  p.text-bold LINE追加
+                    br
+                    |　
+                .flex.sp-only.mb-60
+                  img(src=path+"/img/common/1.svg", alt="").imgNumber
+                  p.text-bold LINE追加
+                    br.pc-only
+                    |　
+                img(src=path+"/img/page/flowMock1.svg", alt="").m-auto
+              .swiper-slide
+                .pc-only
+                  img(src=path+"/img/common/2.svg", alt="").imgNumber
+                  p.text-bold POSTONnID
+                    br
+                    | をSNSで発信
+                .flex.sp-only.mb-60
+                  img(src=path+"/img/common/2.svg", alt="").imgNumber
+                  p.text-bold POSTONnID
+                    br.pc-only
+                    | をSNSで発信
+                img(src=path+"/img/page/flowMock2.svg", alt="").m-auto
+              .swiper-slide
+                .pc-only
+                  img(src=path+"/img/common/3.svg", alt="").imgNumber
+                  p.text-bold 届いたプレゼントを
+                    br
+                    | 確認
+                .flex.sp-only.mb-60
+                  img(src=path+"/img/common/3.svg", alt="").imgNumber
+                  p.text-bold 届いたプレゼントを
+                    br.pc-only
+                    | 確認
+                img(src=path+"/img/page/flowMock3.svg", alt="").m-auto
+              .swiper-slide
+                .pc-only
+                  img(src=path+"/img/common/4.svg", alt="").imgNumber
+                  p.text-bold プレゼントが届く
+                    br
+                    |　
+                .flex.sp-only.mb-60
+                  img(src=path+"/img/common/4.svg", alt="").imgNumber
+                  p.text-bold プレゼントが届く
+                    br.pc-only
+                    |　
+                img(src=path+"/img/page/flowMock4.svg", alt="").m-auto
+            .swiper-pagination.sp-only
+            .swiper-button-prev.swiper-custom-button.sp-only
+              i.fa.fa-angle-left
+            .swiper-button-next.swiper-custom-button.sp-only
+              i.fa.fa-angle-right
+        .index__feature.container
+          .index__feature__content
+            h2.section-title.fadeUp
+              span
+                img(src=path+"/img/logo/logo.svg", alt="")
+              | の特徴
+          .index__feature__content__list
+            .index__feature__content__list__item.fadeUp
+              img(src=path+"/img/page/featureItem1.svg", alt="")
+            .index__feature__content__list__item.fadeUp
+              img(src=path+"/img/page/featureItem2.svg", alt="")
+            .index__feature__content__list__item.fadeUp
+              img(src=path+"/img/page/featureItem3.svg", alt="")
+        .index__question#question
+          h2.section-title.fadeUp よくある質問
+          dl.accordion.js-accordion
+            .accordion__item.js-accordion-trigger.fadeUp
+              dt.accordion__title
+                span
+                  img(src=path+"/img/common/question.svg", alt="")
+                p.text-large.w-90 受け取れないプレゼントはありますか？
+              dd.accordion__content
+                .accordion__content__inline
+                  span.flex
+                    img(src=path+"/img/common/answer.svg", alt="")
+                  .d-block.w-90.text-large.normal
+                    | ヤマト運輸が禁止しているものは、お受け取りいただけません。
+                    br
+                    | 詳しくは
+                    a(href="https://www.kuronekoyamato.co.jp/ytc/customer/send/preparations/inability/" target="_blank" rel="noopener").red.border-red
+                      | ヤマト運輸のホームページ
+                    | をご覧ください。
+            .accordion__item.js-accordion-trigger.fadeUp
+              dt.accordion__title
+                span
+                  img(src=path+"/img/common/question.svg", alt="")
+                p.text-large.w-90 プレゼントの受け取り選択時に、受け取らないことも可能ですか？
+              dd.accordion__content
+                .accordion__content__inline
+                  span.flex
+                    img(src=path+"/img/common/answer.svg", alt="")
+                  p.text-large.w-90.normal 写真で見て危険物と判断できる場合など、受け取らないこともお選びいただけます。
+            .accordion__item.js-accordion-trigger.fadeUp
+              dt.accordion__title
+                span
+                  img(src=path+"/img/common/question.svg", alt="")
+                p.text-large.w-90 届いたプレゼントが壊れていた場合、どうなりますか？
+              dd.accordion__content
+                .accordion__content__inline
+                  span.flex
+                    img(src=path+"/img/common/answer.svg", alt="")
+                  p.text-large.w-90.normal POSTONnはプレゼントの転送サービスですので、プレゼントの安全性や品質を担保することはできかねます。
+            .accordion__item.js-accordion-trigger.fadeUp
+              dt.accordion__title
+                span
+                  img(src=path+"/img/common/question.svg", alt="")
+                p.text-large.w-90 プレゼント企画など、ファンにプレゼントをお届けすることはできますか？
+              dd.accordion__content
+                .accordion__content__inline
+                  span.flex
+                    img(src=path+"/img/common/answer.svg", alt="")
+                  p.text-large.w-90.normal ファンの方にクリエイター側のLINEを作成いただければ、安全にお届けすることが可能です。
+
+
+
+
+
+    include ./include/_footer
+    include ./include/_script

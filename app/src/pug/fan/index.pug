@@ -1,0 +1,155 @@
+- var url          = 'https://postnn.com/fan';
+- var local_url    = 'http://192.168.11.3:3000/';
+- var site_name    = 'POSTNn';
+- var og_locale    = 'jp_JP';
+- var og_type      = 'company';
+- var twitter_card = 'summary_large_image';
+- var twitter_site = '@';
+- var title        = 'プレゼントを贈る・受取るはPOSTNn';
+- var description  = 'POSTNnではLINE連携を行い誰でも無料で簡単にプレゼントの受取ができます。安心・安全を兼ね備えたサービスです。まずは友達追加から・・・';
+- var og_img       = 'https://postnn.com/img/ogp.png';
+- var favicon      = './favicon.ico';
+- var path         = '..'
+
+doctype html
+html(lang="ja")
+  head
+    include ../include/_head
+
+  body
+    #splash
+      #splash_logo
+        img(src=path+"/img/logo/logo.svg" alt="" class="fade")
+    main
+      include ../include/_fanHeader
+      .index
+        .index__top
+          img(src=path+"/img/page/firstView2@2x.jpg.webp", alt="").index__top__firstImg
+          .index__top__warpper
+            .index__top__warpper__material3
+              img(src=path+"/img/common/topMaterial3.svg", alt="")
+            .index__top__warpper__material4
+              img(src=path+"/img/common/topMaterial4.svg", alt="")
+            .index__top__warpper__mock2
+              img(src=path+"/img/common/fan-mock.svg", alt="")
+            .index__top__warpper__content2
+              p.text-bold.red ファンの気持ちを安全にお届けします
+              img(src=path+"/img/logo/logo.svg", alt="").w-300.pc-only
+              img(src=path+"/img/logo/logo.svg", alt="").w-175.sp-only
+              p.text-normal ファンからのプレゼントを安全かつ
+                br
+                | 必要なタイミングでお届けするため、
+                br
+                | ポストンは誕生しました。
+              a(href="https://lin.ee/e0KDcSU" target="_blank" rel="noopener").btn.btn-hover02.text-bold.btn-blue プレゼントを贈る
+        .index__lead
+          .index__lead__warpper
+            p.text-large.fadeUp
+              | 近頃、インターネット上で
+              br.sp-only
+              | 活躍する人が増えてきました。
+              br
+              | ファンの方からプレゼントの受取をしたくても
+              br.sp-only
+              | 送り場所がないクリエイター、
+              br
+              | 応援したいけど送れないファン。
+              br
+              | そんな悩みを解決するために
+              br.sp-only
+              | ポストンは誕生しました。
+            .index__lead__warpper__content
+              h2.text-title.pc-only.fadeUp
+                span
+                  img(src=path+"/img/logo/logo.svg", alt="")
+                | は「想いを安全に早くお届けする」サービスです。
+              h2.text-title.sp-only.fadeUp
+                span
+                  img(src=path+"/img/logo/logo.svg", alt="")
+                | は
+              h2.text-title.sp-only.fadeUp
+                |「想いを安全に早くお届けする」
+                br
+                | サービスです。
+        .index__fanFlow
+          h2.section-title.fadeUp ご利用の流れ
+          .index__fanFlow__content
+            .index__fanFlow__content__item
+              .index__fanFlow__content__item__bg.slideContsL.slideConts
+                .item
+              .index__fanFlow__content__item__img
+                p.text-bold.border-circle STEP
+                  br
+                  | 1
+                img(src=path+"/img/page/flowMock5.svg", alt="").mockItem
+              .index__fanFlow__content__item__text.fadeUp
+                p.text-large LINE追加
+                p.text-normal LINEで【POSTONn贈る】を友達追加してください。その後、画面の案内に沿ってプロフィール情報を入力することで登録ができます。
+            .index__fanFlow__content__item2
+              .index__fanFlow__content__item2__bg.slideContsR.slideConts
+                .item
+              .index__fanFlow__content__item2__img
+                p.text-bold.border-circle STEP
+                  br
+                  | 2
+                img(src=path+"/img/page/flowMock6.svg", alt="").mockItem
+              .index__fanFlow__content__item2__text.fadeUp
+                p.text-large クリエイターのIDを入力
+                p.text-normal クリエイターが公開しているIDを入力し贈り先を登録。間違いのないように番号を入力してください。
+            .index__fanFlow__content__item
+              .index__fanFlow__content__item__bg.slideContsL.slideConts
+                .item
+              .index__fanFlow__content__item__img
+                p.text-bold.border-circle STEP
+                  br
+                  | 3
+                img(src=path+"/img/page/flowMock7.svg", alt="").mockItem
+              .index__fanFlow__content__item__text.fadeUp
+                p.text-large プレゼントのサイズを
+                  br
+                  | 入力して、お支払い
+                p.text-normal プレゼントのサイズや重さを間違いのないように入力し、お支払いをLINE上でおこなってください。QRコードが発行されます。
+                  br
+                  | ※お支払いにはクレジットカードが利用できます。
+            .index__fanFlow__content__item2
+              .index__fanFlow__content__item2__bg.slideContsR.slideConts
+                .item
+              .index__fanFlow__content__item2__img
+                p.text-bold.border-circle STEP
+                  br
+                  | 4
+                img(src=path+"/img/page/flowMock8.svg", alt="").mockItem
+              .index__fanFlow__content__item2__text.fadeUp
+                p.text-large 近くのコンビニで発送
+                p.text-normal コンビニにある端末より、QRコードを読み込み発送をおこなってください。
+            .index__fanFlow__content__item
+              .index__fanFlow__content__item__bg.slideContsL.slideConts
+                .item
+              .index__fanFlow__content__item__img
+                p.text-bold.border-circle STEP
+                  br
+                  | 5
+                img(src=path+"/img/page/flowMock9@2x.png.webp", alt="").mockItem.w-276
+              .index__fanFlow__content__item__text.fadeUp
+                p.text-large クリエイターからの
+                  br
+                  | メッセージが届く
+                p.text-normal 贈ったプレゼントはクリエイターが確認後メッセージが届きます。きちんと届いたかどうか確認ができるので安心です。※クリエイターによってメッセージ内容は異なります。
+
+        .index__feature.container
+          .index__feature__content
+            h2.section-title.fadeUp
+              span
+                img(src=path+"/img/logo/logo.svg", alt="")
+              | の特徴
+          .index__feature__content__list
+            .index__feature__content__list__item.fadeUp
+              img(src=path+"/img/page/featureItem4.svg", alt="")
+            .index__feature__content__list__item.fadeUp
+              img(src=path+"/img/page/featureItem5.svg", alt="")
+            .index__feature__content__list__item.fadeUp
+              img(src=path+"/img/page/featureItem6.svg", alt="")
+
+
+    include ../include/_footer
+    include ../include/_script

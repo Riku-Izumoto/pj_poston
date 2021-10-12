@@ -1,0 +1,73 @@
+#splash {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100000;
+	background: white;
+	text-align: center;
+	color: #fff;
+}
+
+#splash_logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#splash_logo img {
+	width: 260px;
+}
+
+.fade {
+	animation-name: fadeAnime;
+	animation-duration: 0.1s;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes fadeAnime {
+	from {
+		opacity: 0;
+		transform: translateY(0px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.loader {
+	align-items: center;
+	background: #fff;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100000;
+	&::after {
+		animation: loader 0.7s linear infinite;
+		border: 1px solid #{$red};
+		border-radius: 50%;
+		border-right: 2px solid rgba($red, 0.2);
+		border-top: 2px solid rgba($red, 0.2);
+		content: "";
+		height: 30px;
+		width: 30px;
+		margin-top: 120px;
+	}
+}
+
+@keyframes loader {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}

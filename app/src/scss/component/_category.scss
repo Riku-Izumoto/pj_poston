@@ -1,0 +1,24 @@
+.category {
+  background-color: #{$black};
+  border-radius: 25px;
+  padding: 10px 10px;
+  color: #{$white};
+  width: 150px;
+  height: fit-content;
+  @include pc {
+    @include font($fontSize: 14px, $weight: 700, $style: normal, $kerning: 25, $lineheight: 1);
+  }
+
+  @include sp {
+    @include font($fontSize: 14px, $weight: 700, $style: normal, $kerning: 25, $lineheight: 1);
+  }
+}
+
+.tag {
+  background-color: #{$black};
+  display: block;
+  padding: 3px 15px;
+  border-radius: 25px;
+  color: #{$white};
+  width: fit-content;
+}

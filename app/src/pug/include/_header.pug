@@ -1,0 +1,40 @@
+header.header#header
+  .header__img
+    a(href=path+"/")
+      img(src=path+"/img/logo/logo.svg", alt="ロゴ")
+  .header__list3.sp-only
+    .header__list3__item.mr-10
+      p.text-normal プレゼントを
+    .header__list3__item.headerBox
+      a(href=path+"/fan/").text-bold.btn.btn-hover02.btn-small.btn-blue#CvBtn1 贈る
+      a(href="https://lin.ee/uf1Xsgb" target="_blank" rel="noopener").text-bold.btn.btn-hover01.btn-small.btn-red#CvBtn2.none 受け取る
+  .header__list
+    .header__list__item
+      a(href=path+"#flow").text-normal 利用の流れ
+    .header__list__item
+      a(href=path+"#question").text-normal よくある質問
+    .header__list__item
+      a(href=path+"/fan/").text-normal ファンの方はこちら
+  .header__list2
+    .header__list2__item.mr-20
+      p.text-normal プレゼントを
+    .header__list2__item.headerBox
+      a(href=path+"/fan/").text-bold.btn.btn-hover02.btn-small.btn-blue 贈る
+    .header__list2__item.headerBox2
+      a(href="https://lin.ee/uf1Xsgb" target="_blank" rel="noopener").text-bold.btn.btn-hover01.btn-small 受け取る
+  .sp-only
+    .menu
+      a(href=path+"#flow").menu__item
+        p.text-large 利用の流れ
+      a(href=path+"#question").menu__item
+        p.text-large よくある質問
+      a(href=path+"/fan/").menu__item.mb-70
+        p.text-large ファンの方はこちら
+      //- .menu__item
+        a(href=path+"/privacy/").text-normal プライバシーポリシー
+      a(href=path+"/terms/").menu__item.mb-70
+        p.text-normal 利用規約
+      a(href="https://ninareru.com/" target="_blank" rel="noopener").menu__item
+        p.text-normal 運営会社
+    .menu__toggler
+      span
